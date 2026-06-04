@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/TunaCevik/week12-CI-CD/compare/v2.0.1...v2.0.2) (2026-06-04)
+
+
+### Bug Fixes
+
+* auto-format files using pre-commit and ruff ([a95d0ba](https://github.com/TunaCevik/week12-CI-CD/commit/a95d0bad4c8a1c8d485bb91f5a6f98eb1bfeef2a))
+
 ## [2.0.1](https://github.com/TunaCevik/week12-CI-CD/compare/v2.0.0...v2.0.1) (2026-06-04)
 
 
