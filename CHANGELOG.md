@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/TunaCevik/week12-CI-CD/compare/v1.1.1...v1.2.0) (2026-06-04)
+
+
+### Features
+
+* Readme file changed ([14782fb](https://github.com/TunaCevik/week12-CI-CD/commit/14782fb5cdd9785827db3b9df1612a30dbc5eb59))
+
 ## [1.1.1](https://github.com/TunaCevik/week12-CI-CD/compare/v1.1.0...v1.1.1) (2026-06-04)
 
 
