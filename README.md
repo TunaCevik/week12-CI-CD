@@ -1,1 +1,1 @@
-This is a bug fix XXX
+This is a feature update YY
