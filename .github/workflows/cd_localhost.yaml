@@ -1,0 +1,40 @@
+name: CD Localhost
+
+on:
+  workflow_run:
+    workflows: ["CI Semantic Versioning","CI Linting"]
+    types:
+      - completed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to Localhost
+    runs-on: self-hosted
+    # Crucial: workflow_run triggers even if Task 1 fails. This 'if' statement ensures 
+    # we only deploy if the semantic versioning was a complete success.
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Installs dependencies if you have a requirements file
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Kill previously running instance
+        run: |
+          # Finds any process using port 8000 and kills it gracefully
+          # The '|| true' ensures the pipeline doesn't crash if no app is currently running
+          fuser -k 8000/tcp || true
+          sleep 2 # Give the port a moment to fully close
+
+      - name: Launch New Version
+        run: |
+          # 'nohup' and '&' force the Django server to run in the background 
+          # so the GitHub Action can successfully complete and move on.
+          nohup python manage.py runserver 0.0.0.0:8000 > django_app.log 2>&1 &
