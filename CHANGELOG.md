@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/TunaCevik/week12-CI-CD/compare/v1.2.0...v2.0.0) (2026-06-04)
+
+
+* Merge pull request [#5](https://github.com/TunaCevik/week12-CI-CD/issues/5) from TunaCevik/break/readme-file-changed ([ec47813](https://github.com/TunaCevik/week12-CI-CD/commit/ec478132ba5aac448395ee9e361d4f2d9fd7cbe6))
+
+
+### BREAKING CHANGES
+
+* Readme file changed major.
+
 # [1.2.0](https://github.com/TunaCevik/week12-CI-CD/compare/v1.1.1...v1.2.0) (2026-06-04)
 
 
