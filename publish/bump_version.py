@@ -1,5 +1,6 @@
 import sys
 
+
 def bump_version():
     if len(sys.argv) > 1:
         new_version = sys.argv[1]
@@ -9,6 +10,7 @@ def bump_version():
     else:
         print("Error: No version string provided.")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     bump_version()
