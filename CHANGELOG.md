@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/TunaCevik/week12-CI-CD/compare/v2.0.2...v2.1.0) (2026-06-04)
+
+
+### Features
+
+* CD pipeline + yaml ([b4d59bf](https://github.com/TunaCevik/week12-CI-CD/commit/b4d59bfec5997ba91b6d76d05bc3f3e6c273e527))
+
 ## [2.0.2](https://github.com/TunaCevik/week12-CI-CD/compare/v2.0.1...v2.0.2) (2026-06-04)
 
 
