@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/TunaCevik/week12-CI-CD/compare/v2.0.0...v2.0.1) (2026-06-04)
+
+
+### Bug Fixes
+
+* format python files to pass CI ([dd3721f](https://github.com/TunaCevik/week12-CI-CD/commit/dd3721f4b519a8555d4c98868ed2c65ae2136c3c))
+
 # [2.0.0](https://github.com/TunaCevik/week12-CI-CD/compare/v1.2.0...v2.0.0) (2026-06-04)
 
 
